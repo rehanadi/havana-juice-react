@@ -357,7 +357,7 @@ img {
   gap: 2rem;
 }
 
-.products__container--product a {
+.products__container--product > a {
   display: flex;
   justify-content: center;
 }
