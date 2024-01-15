@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Social from './Social'
 
 const Footer = () => {
@@ -20,16 +21,16 @@ const Footer = () => {
 
           <ul>
             <li>
-              <a href="/">Lokasi</a>
+              <Link to="/">Lokasi</Link>
             </li>
             <li>
-              <a href="/">FAQ</a>
+              <Link to="/">FAQ</Link>
             </li>
             <li>
-              <a href="/about">Tentang Kami</a>
+              <Link to="/about">Tentang Kami</Link>
             </li>
             <li>
-              <a href="/contact">Kontak</a>
+              <Link to="/contact">Kontak</Link>
             </li>
           </ul>
         </div>

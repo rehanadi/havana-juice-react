@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const Package = ({ pkg }) => {
   return (
     <div className="packages__container--package">
@@ -20,9 +22,9 @@ const Package = ({ pkg }) => {
             <span>Rp {pkg.sliced_price.toLocaleString('id')}</span>
           </div>
 
-          <a href={`/packages/${pkg.slug}`} className="packages__container--package__info--choose">
+          <Link to={`/packages/${pkg.slug}`} className="packages__container--package__info--choose">
             Pilih
-          </a>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import logo from '../images/logo.jpg'
 import { Link } from 'react-router-dom'
+import logo from '../images/logo.jpg'
 
 const Header = () => {
   const [showNav, setShowNav] = useState(false)
@@ -53,11 +53,11 @@ const Header = () => {
 
   return (
     <header id="header">
-      <a href="/">
+      <Link to="/">
         <figure className="header__logo">
           <img loading="lazy" src={logo} alt="Havana Juice" />
         </figure>
-      </a>
+      </Link>
 
       <nav className={`header__nav ${showNav ? 'show__nav' : ''}`}>
         <Link to="/" className="header__nav--link active">Home</Link>

@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchPackageBySlug } from '../features/packages/packagesSlice'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import Layout from '../components/Layout'
 
 const PackagePage = () => {
@@ -47,9 +47,9 @@ const PackagePage = () => {
                   </span>
                 </p>
 
-                <a href="/" className="product__purchase">
+                <Link to="/" className="product__purchase">
                   Beli
-                </a>
+                </Link>
               </div>
             </div>
             <div className='row'>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import hero from '../images/hero.png'
 
 const Hero = () => {
@@ -13,8 +14,8 @@ const Hero = () => {
         </p>
 
         <div className="hero__content--links">
-          <a href="/products" className="hero__content--links__order">Order Now</a>
-          <a href="/contact" className="hero__content--links__contact">Contact</a>
+          <Link to="/products" className="hero__content--links__order">Order Now</Link>
+          <Link to="/contact" className="hero__content--links__contact">Contact</Link>
         </div>
       </div>
 
