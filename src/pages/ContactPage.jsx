@@ -1,4 +1,5 @@
 import Layout from '../components/Layout'
+import Social from '../components/Social'
 import contact from '../images/contact.jpg'
 
 const ContactPage = () => {
@@ -59,6 +60,10 @@ const ContactPage = () => {
                   info@havanajuice.com
                 </div>
               </div>
+            </div>
+
+            <div className='contact__social'>
+              <Social />
             </div>
           </div>
         </div>
