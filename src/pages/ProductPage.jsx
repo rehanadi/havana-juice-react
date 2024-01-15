@@ -39,9 +39,7 @@ const ProductPage = () => {
                 </p>
         
                 <p className="product__price">
-                  <span>
-                    Rp {Number(product?.price).toLocaleString('id')}
-                  </span>
+                  Rp {Number(product?.price).toLocaleString('id')}
                 </p>
 
                 <a href="/" className="product__purchase">
